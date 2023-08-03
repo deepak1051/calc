@@ -13,10 +13,11 @@ body {
   display: flex;
   flex-direction: column;
   gap: 20px;
-
+  position: relative;
   padding: 40px;
   border-radius: 15px;
   background-color: rgb(213, 243, 243);
+  z-index: 1;
 }
 
 button {
@@ -53,4 +54,15 @@ input {
   padding: 5px 7px;
   border-radius: 5px;
   border: 1px solid black;
+}
+
+.bg-img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0.6;
 }
